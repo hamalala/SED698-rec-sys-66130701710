@@ -1,6 +1,7 @@
 import pickle
 import streamlit as st
 from myfunction_66130701710 import get_movie_recommendations
+from surprise import SVD
 # Load data back from the file
 with open('66130701710_recommendation_usersim.pkl', 'rb') as file:
     user_similarity_df, user_movie_ratings = pickle.load(file)
